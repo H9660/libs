@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+background-image: url("https://i0.wp.com/longreads.com/wp-content/uploads/2022/09/gettyimages-489012681.jpg?fit=1631%2C1210&ssl=1");
+height: 100%;
+background-position: center;
+background-repeat: no repeat;
+background-size: cover;
+font-size:20px
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 8px;
+  display: inline-block;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size:20px
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: white;
+  resize: none;
+  font-size:20px
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: rgb(255, 132, 0);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size:20px
+}
+
+BUTTON {
+  width: 100%;
+  background-color: lime;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size:20px
+}
+input[type=submit]:hover {
+  background-color: purple;
+}
+
+div {
+  border-radius: 10px;
+  
+  padding: 20px;
+}
+</style>
+<body>
+<center>
+<form method="post" action="registrationphp.php">
+<h3>DIGITAL LIBRARY</h3>
+</center>
+<div>
+
+  First Name:
+    <input type="text" name="firstname" placeholder="Your name..">
+
+    Last Name:
+    <input type="text" name="lastname" placeholder="Your last name..">
+
+    Country:
+    <select name="country">
+    <option value=""></option>
+      <option value="India">India</option>
+      <option value="Pakistan">Pakistan</option>
+      <option value="China">China</option>
+      <option value="Nepal">Nepal</option>
+      <option value="Sri Lanka">Sri Lanka</option>
+      <option value="others">Others</option>
+     </select>
+
+    Email:
+    <input type="text" name="email" placeholder="Your email address..">
+
+    Contact Number:
+    <input type="text" name="contact_no" placeholder="Your working contact number..">
+
+    Book you have read:
+    <input type="text" name="book" placeholder="Book name..">
+    <br><br>
+    Feedback of book:
+    <input type="text" name="fb_book" placeholder="Feedback of the book..">
+    <br><br><br>
+
+    Feedback of <b>BIBLIOTHECA</b>:
+    <input type="text" name="feedback" placeholder="Feedback of the BIBLIOTHECA.."><br><br>
+
+   Rate us: 
+    <select name="rate">
+    <option value="">We hope that Bibliotheca has taken you deep 
+    into the world of books!!!</option>
+      <option value="1">1 STAR</option>
+      <option value="2">2 STAR</option>
+      <option value="3">3 STAR</option>
+      <option value="4">4 STAR </option>
+      <option value="5">5 STAR</option>
+     </select>
+    <br><br><br>
+    
+
+    <center>
+      <button onclick="test();">SUBMIT</button>
+      
+      </center>
+      <script type="text/javascript">
+      function test(){
+      alert("Thanks for your registration to digital library Bibliotheca.");
+      }
+      
+      </script>
+      
+
+            
+</div>
+</form>
+</body>
+</html>

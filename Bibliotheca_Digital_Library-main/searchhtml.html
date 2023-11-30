@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>project</title>
+<style>
+.project{
+background-image: url("https://www.incimages.com/uploaded_files/image/1920x1080/getty_813319932_383768.jpg");
+height: 100%;
+background-position: center;
+background-repeat: no repeat;
+background-size: cover;
+}
+
+table, td { border: 4px solid yellow}
+</style>
+</head>
+<body>
+<div class="project">
+  <form action="searchphp.php" method="post">
+    <center><h1 style="color:#FFD700"><u>Digital Library Management System</u></h1></center>
+ 
+    
+ 
+        <table border="4" align="center" cellpadding="5" cellspacing="5">
+            <tr>
+            <td> <font style="color:pink"><b>Enter ISBN :</b></font></td>
+            <td> <input type="text" name="isbn" size="48"> </td>
+            </tr>
+            <tr>
+            <td> <font style="color:pink"><b>Enter Title :</b></font></td>
+            <td> <input type="text" name="title" size="48"> </td>
+            </tr>
+            <tr>
+            <td> <font style="color:pink"><b>Enter Author :</b></font></td>
+            <td> <input type="text" name="author" size="48"> </td>
+            </tr>
+            <tr>
+            <td> <font style="color:pink"><b>Enter Edition :</b></font></td>
+            <td> <input type="text" name="edition" size="48"> </td>
+            </tr>
+            <tr>
+            <td> <font style="color:pink"><b>Enter Publication:</b></font> </td>
+            <td> <input type="text" name="publication" size="48"> </td>
+            </tr>
+
+            <tr>
+          
+            <td>
+                <center>
+                    <button onclick="test();">SUBMIT</button>
+                    
+                    </center>
+                    <script type="text/javascript">
+                    function test(){
+                    alert("Thanks for your submission.");
+                    }
+                    
+                    </script>
+                    
+                    <center>
+                        <button onclick="test();">Proceed</button>
+                        
+                        </center>
+                        <script type="text/javascript">
+                        function test(){
+                        alert("Please enter your details again.");
+                        }
+                        
+                        </script>
+                        
+            </td>
+            </tr>
+        </table>
+<p align="right">
+<iframe src="aBookAndaLaptopPic.html"></iframe>
+</p>
+</div>
+    </form>
+</body>
+</html>
